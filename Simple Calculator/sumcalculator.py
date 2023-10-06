@@ -1,12 +1,26 @@
 #NYAGA JOY CHRISTINE MUTHONI
 #SCT211-0572/2022
-print("Enter your name>>")
-username = input()
-print("Hello, " + username)
-print("This is a simple calculator that adds 2 numbers.")
-print("Enter 2 integers you would like to add>>")
-num1 = int(input("Enter the first integer: "))
-num2 = int(input("Enter the second integer: "))
-sum = num1 + num2
-print(f"The sum of {num1} and {num2} is {sum}")
-#print("The sum of " + str(num1) + " and " + str(num2) + " is " + str(sum) )
+
+def func_sum():
+    num1 = int(input("Enter the first integer: "))
+    num2 = int(input("Enter the second integer: "))
+    sum = num1 + num2
+    print("Sum is " + str(sum))
+
+def func_ageCalculator():
+    birthYear = int(input("Enter your birth year>>"))
+    currentYear = int(input("Enter current year>>"))
+    ageYears = currentYear - birthYear
+    ageMonths = ageYears * 12
+    ageDays = ageMonths * 30
+
+    print(f"you are {ageYears} years old.")
+    print(f"you are {ageMonths} months old.")
+    print(f"you are {ageDays} days old.")
+
+def all_Operations():
+    func_sum()
+    func_ageCalculator()
+
+all_Operations()
+
